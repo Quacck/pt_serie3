@@ -18,7 +18,13 @@ int main(int argc, char * argv[]){
 		if (n%i==0 && is_prime(i)){
 		printf("%d\n",i);	
 		}
+
+	
 	}
+	if (is_prime(n)) {
+	printf("%d\n",n);
+	}
+
 return 0;
 }
 
