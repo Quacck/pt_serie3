@@ -1,0 +1,77 @@
+         o                         o__ __o                           o                               __o     
+        <|>                       /v     v\                         <|>                            o/  v\    
+        / \                      />       <\                        / >                           /|    <\   
+      o/   \o        o       o   \o          o__ __o/     o__ __o/  \o__ __o       o__  __o       //    o/   
+     <|__ __|>      <|>     <|>   |>_       /v     |     /v     |    |     v\     /v      |>           /v    
+     /       \      < >     < >   |        />     / \   />     / \  / \     <\   />      //           />     
+   o/         \o     |       |   <o>       \      \o/   \      \o/  \o/      /   \o    o/           o/       
+  /v           v\    o       o    |         o      |     o      |    |      o     v\  /v __o       /v        
+ />             <\   <\__ __/>   / \        <\__  < >    <\__  / \  / \  __/>      <\/> __/>      /> __o__/_ 
+                                                   |                                                         
+                                           o__     o                                                         
+                                           <\__ __/>                                      
+										   
+von Julian Berger und Vincent Opitz
+
+zu a vollständig) 
+/* Jede Zeile soll ein neuer "Umformungsschritt" sein */
+
+expression
+assignment_expression
+conditional_expression
+logical-OR-expression
+inclusive-OR-expression
+exclusive-OR-expression
+AND-expression
+equality-expression
+relational-expression
+shift-expression
+additive-expression
+multiplikative-expression
+cast-expression
+(type-name) cast-expression
+(specifier-qualifier-list) cast-expression
+(type-specifier) cast-expression
+(int) cast-expression
+(int) unary-expression
+(int) postfix-expression
+(int) primary-expression
+(int) constant
+(int) floating-constant
+(int) decimal-floating-constant
+(int) fractional-constant
+(int) digit_sequence . digit_sequence
+(int) digit . digit_sequence
+(int) 3. digit_sequence
+(int) 3. digit_sequence digit
+(int) 3. digit_sequence digit digit
+(int) 3. digit digit digit
+(int) 3.1 digit digit
+(int) 3.14 digit
+(int) 3.142
+
+zu b skizziert)
+
+expression
+assignment_expression
+unary-expression assignment_operator assignment_expression
+unary-expression = assignment_expression
+postfix-expression = assignment_expression
+primary-expression = assignment_expression
+identifier = assignment_expression
+identifier = additive-expression + multiplikative-expression
+identifier = multiplikative-expression + multiplikative-expression
+identifier = cast-expression + multiplikative-expression
+identifier = unary-expression + multiplikative-expression
+identifier = constant + multiplikative-expression
+identifier = constant + unary-expression 
+identifier = constant + constant
+
+/*Ab da weiter wie in Zeile 39 für die constant's*/
+
+zu c skizziert)
+
+expression
+assignment_expression , assignment_expression
+
+/*Ab da weiter wie in b). der assignment_operator ist hier einmal = und einmal += */
