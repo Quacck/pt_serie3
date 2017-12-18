@@ -17,14 +17,14 @@ unsigned long long ausrufezeichen(int a){
 	for (int i=1; i<=a; i++){
 		produkt*=i;
 	}
-	printf("a! = %llu\n",produkt);
+	/*printf("a! = %llu\n",produkt);*/
 	return produkt;
 }
 
 int main(int argc, char * argv[]){
 	unsigned long long n = ausrufezeichen(atoi(argv[1]));
 	while (n>1){
-	for (int i=2; i<=n; i++) {
+	for (unsigned long long i=2; i<=n; i++) {
 		if (n%i==0 && is_prime(i)){
 		printf("%d\n",i);
 		n=n/i;
